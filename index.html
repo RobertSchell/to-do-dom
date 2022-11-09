@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>to-do-dom</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css">
+</head>
+
+<body>
+    <h1>TO-DO LIST</h1>
+    
+    <div>
+        <form>
+            
+            <label>Add items to your to-do list!</label>
+            <br>
+            <input type="text" id="textBox" autocomplete="off" placeholder="Enter to-do item"/>
+            <br>
+    
+            <div id="buttons">
+                <input type="submit" id="addButton" value="ADD TO-DO ITEM"/>
+                <input type="submit" id="removeCompletedButton" value="REMOVE COMPLETED TO-DO"/>
+                <input type="submit" id="removeAllButton" value="REMOVE ALL TO-DO ITEMS"/>
+            </div>
+        
+        </form>
+    </div>
+
+        <h3>Current To-do Items</h3>
+
+        <div id="emptyList" class="olItems">
+            <ol>
+
+            </ol>
+        </div>
+
+    
+
+    <script src="main.js"></script> 
+</body>
+</html>
