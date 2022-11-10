@@ -49,13 +49,12 @@ addButton.addEventListener("click", function(event){
                 listItem.style.textDecoration = "line-through";
             }
 });
-        textBox.value = "";//resetting textBox to default value after submit/click event
+        textBox.value = "";//resetting textBox to default value after click event
     }
 });
 
 //eventListener for removeCompletedButton
 removeCompletedTasksButton.addEventListener("click", function(event){
-    event.preventDefault();
     let removeItems = document.querySelectorAll("#emptyList li");
     for(let i = 0; i < removeItems.length; i++){
         if(removeItems[i].style.textDecoration === "line-through"){
@@ -66,14 +65,8 @@ removeCompletedTasksButton.addEventListener("click", function(event){
 
 //eventListener for removeAllButton
 removeAllButton.addEventListener("click", function(event){
-    event.preventDefault();
     let items = document.querySelectorAll("#emptyList li");
     for (let i = 0; i < items.length; i++){
         emptyList.removeChild(items[i]);
     }
 });
-
-
-
-
-
