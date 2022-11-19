@@ -55,6 +55,7 @@ addButton.addEventListener("click", function(event){
 
 //eventListener for removeCompletedButton
 removeCompletedTasksButton.addEventListener("click", function(event){
+    event.preventDefault();
     let removeItems = document.querySelectorAll("#emptyList li");
     for(let i = 0; i < removeItems.length; i++){
         if(removeItems[i].style.textDecoration === "line-through"){
